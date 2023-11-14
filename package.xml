@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>moveit_interface</name>
+  <version>0.0.1</version>
+  <description>The moveit_interface package</description>
+  <license>BSD</license>
+
+  <maintainer email="dave@picknik.ai">Dave Coleman</maintainer>
+  <maintainer email="mike@picknik.ai">Mike Lautman</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>moveit_core</build_depend>
+  <build_depend>moveit_ros_planning_interface</build_depend>
+
+  <run_depend>moveit_core</run_depend>
+  <run_depend>moveit_ros_planning_interface</run_depend>
+
+</package>
