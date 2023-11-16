@@ -14,12 +14,14 @@ int main(int argc, char** argv)
     move_target.orientation.y = atof(argv[5]);
     move_target.orientation.z = atof(argv[6]);
     move_target.orientation.w = atof(argv[7]);
-    move_frame = argv[8];
+    move_frame = argv[8].c_str();
   } else {
     printf("Usage: move_to_pose x y z qx qy qz qw frame_id \n");
     ROS_ERROR("move_to_pose exited due to not having the right number of arguments");
     return -1;
   }
+  ROS_INFO("Move to : x=%f, y=%f, z=%f w.r.t %s",move_target.position.x,move_target.position.y,move_target.position.z,move_frame);
+  // printf("Got move_target !\n");
 
   ros::AsyncSpinner spinner(1);
   spinner.start();
