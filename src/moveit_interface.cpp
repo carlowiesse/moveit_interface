@@ -32,7 +32,7 @@ int main(int argc, char** argv)
   moveit::planning_interface::MoveGroupInterface move_group(PLANNING_GROUP);
   
   // Plan for robot to move to part
-  move_group.setGoalTolerance(0.5)
+  // move_group.setGoalTolerance(0.5);
   move_group.setPoseReferenceFrame(move_frame);
   move_group.setPoseTarget(move_target);
   move_group.move();
